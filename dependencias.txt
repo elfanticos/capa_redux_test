@@ -1,0 +1,7 @@
+--STORE
+npm install @ngrx/core @ngrx/store --save
+--DEVTOOL
+npm install @ngrx/store-devtools --save
+--EFECTOS
+npm install @ngrx/effects --save
+
