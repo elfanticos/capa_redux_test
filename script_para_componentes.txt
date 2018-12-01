@@ -1,0 +1,36 @@
+---LOGIN
+ng g c auth/login --spec=false -is
+---REGISTER
+ng g c auth/register --spec=false -is
+---DASHBOARD
+ng g c dashboard --spec=false -is
+---INGRESO Y EGRESO
+ng g c ingreso-egreso --spec=false -is
+---ESTADISTICA
+ng g c ingreso-egreso/estadistica --spec=false -is
+---DETALLE
+ng g c ingreso-egreso/detalle --spec=false -is
+---SHARED / FOOTER
+ng g c shared/footer --spec=false -is
+---SHARED / NAVBAR
+ng g c shared/navbar --spec=false -is
+---SHARED / SIDEBAR
+ng g c shared/sidebar --spec=false -is
+
+
+---- INSTALAR DEPENDENCIAS
+"node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+
+---SERVICIOS
+ng g s auth/auth --spec=false
+ng g s auth/authGuard --spec=false
+ng g s ingreso-egreso/ingreso-egreso --spec=false
+
+---PIPE
+ng g p ingreso-egreso/orden-ingreso-egreso --spec=false
+
+----MODULOS
+ng g m shared --spec=false
+ng g m ingreso-egreso --spec=false
+ng g m dashboardRouting --spec=false

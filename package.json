@@ -1,0 +1,11 @@
+{
+  "name": "ingreso-egreso-redux",
+  "version": "1.0.0",
+  "description": "Proyecto para implementar redux con ngrx en proyecto real",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

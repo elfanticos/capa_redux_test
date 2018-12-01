@@ -1,0 +1,1 @@
+global.JWT_KEY = 'super_clave';
