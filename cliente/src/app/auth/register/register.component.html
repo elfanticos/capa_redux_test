@@ -1,0 +1,96 @@
+
+  <div class="page-body-wrapper full-page-wrapper auth-page">
+    <div class="content-wrapper d-flex align-items-center auth register-bg-1 theme-one">
+      <div class="row w-100">
+        <div class="col-lg-4 mx-auto">
+          <h2 class="text-center mb-4">Registro</h2>
+          <div class="auto-form-wrapper">
+            <form #f="ngForm" (ngSubmit)="onSubmit(f.value,f)">
+              <!-- Nombre -->
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="email" class="form-control" required autocomplete="nope" name="nom_persona" ngModel placeholder="Nombre">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-check-circle"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Apellido paterno -->
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="password" class="form-control" required autocomplete="nope" name="ape_pate_pers" ngModel placeholder="Apellido paterno">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-check-circle"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Apellido materno -->
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" required autocomplete="nope" name="ape_mate_pers"ngModel  placeholder="Apellido Materno">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-check-circle"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nro documento -->
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" required autocomplete="nope" name="nro_documento" ngModel placeholder="Nro Documento">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-check-circle"></i>
+                    </span>
+                  </div>
+                </div>
+              </div> 
+
+              <!-- Usuario -->
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" required autocomplete="nope" name="usuario" ngModel placeholder="Usuario">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-check-circle"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clave -->
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="password" class="form-control" autocomplete="nope" required name="clave" ngModel placeholder="Contraseña">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-check-circle"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Acciones -->
+              <div class="form-group">
+                <button class="btn btn-primary submit-btn btn-block" type="submit"  [disabled]="f.invalid">Crear cuenta</button>
+              </div>
+              <div class="text-block text-center my-3">
+                <span class="text-small font-weight-semibold">ya tienes una cuenta?</span>
+                <br>
+                <a href="" class="text-black text-small" routerLink="/login">Login</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content-wrapper ends -->
+  </div>
+  <!-- page-body-wrapper ends -->

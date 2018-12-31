@@ -6,8 +6,8 @@ const m_auth      = require('./m_auth'),
 async function crearUsuario(req,res) {
     try {
         let data_req = req.body;
-        let user =  await m_auth.crearUsuario(data_req);
-        let token = jwt_service.createToken(user);
+        let user     =  await m_auth.crearUsuario(data_req);
+        let token    = jwt_service.createToken(user);
         res.status(200).send({user, token});
     } catch (err) {
         if(err.status) {
