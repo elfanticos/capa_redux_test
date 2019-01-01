@@ -5,11 +5,13 @@ const m_auth      = require('./m_auth'),
 
 async function crearUsuario(req,res) {
     try {
+        console.log('llegue aqui');
         let data_req = req.body;
         let user     =  await m_auth.crearUsuario(data_req);
         let token    = jwt_service.createToken(user);
         res.status(200).send({user, token});
     } catch (err) {
+        console.log(err);
         if(err.status) {
             res.status(err.status).send(err);
         } else {

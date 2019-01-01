@@ -9,6 +9,9 @@
 cliente/node_modules
 servidor/node_modules
 
+cliente/package-lock.json
+servidor/package-lock.json
+
 # IDEs and editors
 /.idea
 .project
